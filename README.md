@@ -35,7 +35,6 @@ Practice Iteration
 Given
 -----
 - [ ] Demo application
-- [ ] [Конструктор заготовок Spring-приложений](https://start.spring.io)
 - [ ] Обзор maven-[зависимостей](https://docs.spring.io/spring/docs/5.0.0.RC3/spring-framework-reference/overview.html#dependency-management)
 - [ ] Настроен максимальный уровень журналирования
 
@@ -378,6 +377,7 @@ Practice Iteration
 ==================
 Given
 -----
+- [ ] [Конструктор заготовок Spring Boot приложений](https://start.spring.io)
 - [ ] Демо плагина анализа конфигурации в IDEA 
 - [ ] Demo application
 - [ ] Реализованный REST API
