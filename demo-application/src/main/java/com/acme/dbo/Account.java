@@ -6,6 +6,10 @@ public class Account {
     private int id;
     private BigDecimal amount;
 
+    public Account(BigDecimal amount) {
+        this.amount = amount;
+    }
+
     public Account(int id, BigDecimal amount) {
         this.id = id;
         this.amount = amount;
