@@ -66,7 +66,7 @@ Then
 - в [annotation-based](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-classpath-scanning)
 - в [java-конфигурации](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-java-bean-annotation)
 
-- [ ] Инициализация компонентов в [xml-конфигурации](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-class)
+- [ ] Инстациирование компонентов в [xml-конфигурации](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-class)
 
 - [ ] Управление жизненным циклом компонентов: магия 
 - [scoped proxies](https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch04s04.html) 
