@@ -1,17 +1,15 @@
 package com.acme.dbo;
 
+import com.acme.dbo.config.Config;
 import com.acme.dbo.controller.AccountController;
-import com.acme.dbo.domain.Account;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.*;
 
 
 public class Application {
-    private static final Map<Integer, Account> accounts = new HashMap<>();
-
     public static void main(String... args) {
-        try(ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("application-config.xml")) {
+        try(AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class)) {
             AccountController controller = context.getBean(AccountController.class);
 
             System.out.println("Account operations: create, get, get-by-id");

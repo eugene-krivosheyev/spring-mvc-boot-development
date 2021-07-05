@@ -1,11 +1,12 @@
 package com.acme.dbo;
 
+import com.acme.dbo.config.Config;
 import com.acme.dbo.controller.AccountController;
 import com.acme.dbo.domain.Account;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.Collection;
 
@@ -14,11 +15,11 @@ import static org.junit.Assert.assertTrue;
 
 public class AccountTest {
     private AccountController sut;
-    private ClassPathXmlApplicationContext context;
+    private AnnotationConfigApplicationContext context;
 
     @Before
     public void setUp() {
-        context = new ClassPathXmlApplicationContext("application-config.xml");
+        context = new AnnotationConfigApplicationContext(Config.class);
         sut = context.getBean(AccountController.class);
     }
 
