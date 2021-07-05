@@ -5,16 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="repository" class="com.acme.dbo.dao.MapBackedAccountRepository">
-        <constructor-arg value="${accounts.repo.init-capacity}" />
-    </bean>
-
-    <bean id="service" class="com.acme.dbo.service.AccountService">
-        <constructor-arg ref="repository" />
-    </bean>
 
     <bean class="com.acme.dbo.controller.AccountController">
-        <constructor-arg ref="service" />
+        <constructor-arg ref="accountService" />
     </bean>
-
 </beans>
