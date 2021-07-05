@@ -1,23 +1,30 @@
 package com.acme.dbo;
 
 import com.acme.dbo.controller.AccountController;
-import com.acme.dbo.dao.MapBackedAccountRepository;
 import com.acme.dbo.domain.Account;
-import com.acme.dbo.service.AccountService;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class AccountTests {
+public class AccountTest {
     private AccountController sut;
+    private ClassPathXmlApplicationContext context;
 
     @Before
     public void setUp() {
-        sut = new AccountController(new AccountService(new MapBackedAccountRepository(5)));
+        context = new ClassPathXmlApplicationContext("application-config.xml");
+        sut = context.getBean(AccountController.class);
+    }
+
+    @After
+    public void tearDown() {
+        context.close();
     }
 
     @Test
