@@ -2,6 +2,11 @@
 ========================================
 18 ак. ч., 6 дней.
 
+Записи
+------
+- [29.06](https://us02web.zoom.us/rec/share/SmJ7PIH81bhEEphwBcWD9f-SqbMBz4pUt51sF3hOk_P3UB0PmfRpcMeby9Bt1eqo.eMdZu47sj3XApaHo)
+- [05.07](https://us02web.zoom.us/rec/share/Q8zQvhSztjEN_9VjgUbeulTPlJVkfdBEL_SLQN4mVctSgPHbAwV_y2ioe-tNGelM.ZDCBkqVh2GWz20zC)
+
 Prerequisites
 -------------
 - [ ] Installed JDK8
