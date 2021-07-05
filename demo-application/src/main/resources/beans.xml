@@ -6,7 +6,7 @@
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="repository" class="com.acme.dbo.dao.MapBackedAccountRepository">
-        <constructor-arg value="10" />
+        <constructor-arg value="${accounts.repo.init-capacity}" />
     </bean>
 
     <bean id="service" class="com.acme.dbo.service.AccountService">
