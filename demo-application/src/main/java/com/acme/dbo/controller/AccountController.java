@@ -7,7 +7,11 @@ import java.math.BigDecimal;
 import java.util.Collection;
 
 public class AccountController {
-    private final AccountService service = new AccountService();
+    private final AccountService service;
+
+    public AccountController(AccountService service) {
+        this.service = service;
+    }
 
     public void create(String amountData) {
         service.create(new BigDecimal(amountData));

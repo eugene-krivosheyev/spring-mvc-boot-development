@@ -1,7 +1,9 @@
 package com.acme.dbo;
 
 import com.acme.dbo.controller.AccountController;
+import com.acme.dbo.dao.MapBackedAccountRepository;
 import com.acme.dbo.domain.Account;
+import com.acme.dbo.service.AccountService;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,7 +17,7 @@ public class AccountTests {
 
     @Before
     public void setUp() {
-        sut = new AccountController();
+        sut = new AccountController(new AccountService(new MapBackedAccountRepository(5)));
     }
 
     @Test

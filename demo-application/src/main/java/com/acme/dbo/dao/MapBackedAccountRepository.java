@@ -8,7 +8,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MapBackedAccountRepository implements AccountRepository {
-    private final Map<Integer, Account> accounts = new HashMap<>();
+    private final Map<Integer, Account> accounts ;
+
+    public MapBackedAccountRepository(int initialCapacity) {
+        accounts = new HashMap<>(initialCapacity);
+    }
 
     @Override
     public Account create(Account accountData) {
