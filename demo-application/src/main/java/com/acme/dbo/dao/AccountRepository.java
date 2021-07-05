@@ -1,4 +1,6 @@
-package com.acme.dbo;
+package com.acme.dbo.dao;
+
+import com.acme.dbo.domain.Account;
 
 import java.util.Collection;
 

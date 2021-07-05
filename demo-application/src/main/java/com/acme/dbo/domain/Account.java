@@ -1,4 +1,4 @@
-package com.acme.dbo;
+package com.acme.dbo.domain;
 
 import java.math.BigDecimal;
 

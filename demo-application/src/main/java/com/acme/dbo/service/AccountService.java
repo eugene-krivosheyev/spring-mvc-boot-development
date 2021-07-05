@@ -1,4 +1,8 @@
-package com.acme.dbo;
+package com.acme.dbo.service;
+
+import com.acme.dbo.dao.AccountRepository;
+import com.acme.dbo.dao.MapBackedAccountRepository;
+import com.acme.dbo.domain.Account;
 
 import java.math.BigDecimal;
 import java.util.Collection;

@@ -1,4 +1,7 @@
-package com.acme.dbo;
+package com.acme.dbo.controller;
+
+import com.acme.dbo.domain.Account;
+import com.acme.dbo.service.AccountService;
 
 import java.math.BigDecimal;
 import java.util.Collection;
