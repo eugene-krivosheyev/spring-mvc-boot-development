@@ -59,7 +59,7 @@ Then
 - [XML-based configuration](https://docs.spring.io/spring-framework/docs/4.3.x/spring-framework-reference/html/xsd-configuration.html)
 - [Groovy](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#groovy-bean-definition-dsl) 
 - [Annotation-based configuration](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-annotation-config) including JSR 330 and JSR 250 annotations 
-- [Java-based configuration](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-java)
+- [Java-based configuration](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-java) и [комбинация с xml](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-java-combining)
 
 - [ ] Декларация компонентов 
 - в [xml-конфигурации](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#beans-definition)
@@ -83,7 +83,7 @@ Then
 - в [java-конфигурации](https://www.baeldung.com/spring-lazy-annotation)
 
 - [ ] [Внедрение зависимостей](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-dependencies)
-- в [xml-конфигурации](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-some-examples)
+- в [xml-конфигурации](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-some-examples), включая [xml autowiring](http://websystique.com/spring/spring-beans-auto-wiring-example-using-xml-configuration/)
 - в [annotation-based](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-required-annotation)
 - в [java-конфигурации](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-java-dependencies)  
 
