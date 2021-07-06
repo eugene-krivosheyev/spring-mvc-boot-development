@@ -24,7 +24,7 @@ public class Application {
                     break;
 
                 case "get-by-id":
-                    System.out.println(clientService.getClientAccountsById(Integer.valueOf(console.next())));
+                    System.out.println(clientService.getClientById(Integer.parseInt(console.next())));
                     break;
 
                 case "get":

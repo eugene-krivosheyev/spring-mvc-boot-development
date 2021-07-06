@@ -22,6 +22,9 @@ public class ClientService {
         return clientRepository.getClient(id).getAccounts();
     }
 
+    public Client getClientById(int id) {
+        return clientRepository.getClient(id);
+    }
 //    TODO:
     public List<Client> getAllClients() {
         return clientRepository.getAll();

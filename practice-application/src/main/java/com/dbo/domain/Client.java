@@ -1,11 +1,13 @@
 package com.dbo.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Client {
     public Client(int id, String name) {
         this.id = id;
         this.name = name;
+        accounts = new ArrayList<>();
     }
 
     public int getId() {
