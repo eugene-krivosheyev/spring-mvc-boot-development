@@ -26,5 +26,10 @@ public class Client {
 
     private int id;
     private String name;
+
+    public List<Integer> getAccounts() {
+        return accounts;
+    }
+
     private List<Integer> accounts;
 }

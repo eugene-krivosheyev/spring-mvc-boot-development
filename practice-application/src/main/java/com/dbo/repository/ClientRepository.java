@@ -15,4 +15,8 @@ public class ClientRepository {
     public void saveClient(Client client) {
         clients.put(client.getId(), client);
     }
+
+    public Client getClient(int id) {
+        return clients.get(id);
+    }
 }
