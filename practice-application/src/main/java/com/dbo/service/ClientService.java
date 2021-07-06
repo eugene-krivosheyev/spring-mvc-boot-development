@@ -1,13 +1,17 @@
-package main.java.com.dbo.service;
+package com.dbo.service;
 
-import main.java.com.dbo.domain.Client;
-import main.java.com.dbo.repository.ClientRepository;
+import com.dbo.domain.Client;
+import com.dbo.repository.ClientRepository;
 
 import java.util.List;
 import java.util.Map;
 
 public class ClientService {
     ClientRepository clientRepository;
+    
+    public ClientService(ClientRepository repo) {
+        this.clientRepository = repo;
+    } 
 
     public void addNewClient(int id, String name) {
         Client client = new Client(id, name);
@@ -20,6 +24,6 @@ public class ClientService {
 
 //    TODO:
     public List<Client> getAllClients() {
-        return null;
+        return clientRepository.getAll();
     }
 }

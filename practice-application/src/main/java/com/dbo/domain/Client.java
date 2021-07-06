@@ -1,4 +1,4 @@
-package main.java.com.dbo.domain;
+package com.dbo.domain;
 
 import java.util.List;
 
@@ -32,4 +32,9 @@ public class Client {
     }
 
     private List<Integer> accounts;
+
+    @Override
+    public String toString() {
+        return "Client{id=" + id + ", name=" + name + "}";
+    }
 }
