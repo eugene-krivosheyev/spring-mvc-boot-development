@@ -6,6 +6,7 @@
 ------
 - [29.06](https://us02web.zoom.us/rec/share/SmJ7PIH81bhEEphwBcWD9f-SqbMBz4pUt51sF3hOk_P3UB0PmfRpcMeby9Bt1eqo.eMdZu47sj3XApaHo)
 - [05.07](https://us02web.zoom.us/rec/share/CWF2DmTqUouQvsZPL6r0vrEm17cI7-X_sX8sRBvBT8sEVVkCne_QTTS2a-x3-cE.uI-Mc66s5-sONKwr)
+- [06.07](https://us02web.zoom.us/rec/share/f75CMJd1EDJEIiVxGj68hTlkFlfkJA1uPgBHbRQxOZ4ejoIKvpptSZ5f6qbtt61d.aPa-jOUPPXaRhQ6l)
 
 Prerequisites
 -------------
