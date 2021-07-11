@@ -1,7 +1,12 @@
 package com.acme.dbo.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import java.math.BigDecimal;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({ "amount", "id" })
 public class Account {
     private int id;
     private BigDecimal amount;
