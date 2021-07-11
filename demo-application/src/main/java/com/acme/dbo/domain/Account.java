@@ -6,8 +6,7 @@ public class Account {
     private int id;
     private BigDecimal amount;
 
-    public Account(BigDecimal amount) {
-        this.amount = amount;
+    public Account() {
     }
 
     public Account(int id, BigDecimal amount) {
@@ -21,6 +20,14 @@ public class Account {
 
     public BigDecimal getAmount() {
         return amount;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
     }
 
     @Override

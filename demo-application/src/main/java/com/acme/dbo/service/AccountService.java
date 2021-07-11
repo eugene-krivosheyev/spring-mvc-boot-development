@@ -15,8 +15,8 @@ public class AccountService {
         this.accounts = accounts;
     }
 
-    public Account create(BigDecimal amount) {
-        return accounts.create(new Account(amount));
+    public Account create(Account accountData) {
+        return accounts.create(accountData);
     }
 
     public Account findById(Integer id) {

@@ -19,8 +19,8 @@ public class AccountController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@RequestBody String amountData) {
-        service.create(new BigDecimal(amountData));
+    public void create(@RequestBody Account accountData) {
+        service.create(accountData);
     }
 
     @GetMapping("/{id}")
