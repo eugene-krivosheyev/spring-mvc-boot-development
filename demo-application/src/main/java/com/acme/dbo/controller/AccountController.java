@@ -31,7 +31,7 @@ public class AccountController {
     }
 
     @GetMapping
-    public @ResponseBody Collection<Account> findAll() {
+    public Collection<Account> findAll() {
         return service.findAll();
     }
 }
