@@ -362,6 +362,7 @@ CLI Boot Applications
 - [ ] [Структура приложения и точка входа](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#using.structuring-your-code.locating-the-main-class)
 - [ ] [Запуск boot-приложения](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#using.using-the-springbootapplication-annotation)
 - [ ] [Конфигурация Boot-приложения](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#features.external-config)
+- [ ] [Дефолтный конфигурационный файл](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html)
 - [ ] [Конфигурационные профили](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#features.profiles)
 - [пример с настройкой компонентов](https://www.baeldung.com/spring-boot-lazy-initialization#enable-lazy-initialization)
 - [ ] Поддержка в IDEA
