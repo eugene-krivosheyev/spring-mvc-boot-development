@@ -1,4 +1,4 @@
-accounts.repo.init-capacity: 5
+accounts.repo.init-capacity: 1
 
 debug: true
 logging.level:
