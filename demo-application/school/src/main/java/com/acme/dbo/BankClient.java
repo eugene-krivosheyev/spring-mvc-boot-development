@@ -3,10 +3,30 @@ package com.acme.dbo;
 import java.util.Objects;
 
 public class BankClient {
+    private int id;
     private String name;
 
-    public BankClient(String name){
+
+    public BankClient() {
+    }
+
+    public BankClient(int id, String name){
+        this.id = id;
         this.name = name;
+    }
+    public int getId() {
+        return id;
+    }
+    public String getName(){
+       return name;
+    }
+
+    public void setId(int id) {
+        this.id=id;
+    }
+
+    public void setName(String name) {
+        this.name=name;
     }
 
     @Override
