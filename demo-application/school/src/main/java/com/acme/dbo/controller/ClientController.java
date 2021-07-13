@@ -19,7 +19,7 @@ public class ClientController {
     }
 
     @GetMapping
-    public  @ResponseBody Collection<BankClient> findAll(){
+    public Collection<BankClient> findAll(){
         return service.findAll();
     }
 }
