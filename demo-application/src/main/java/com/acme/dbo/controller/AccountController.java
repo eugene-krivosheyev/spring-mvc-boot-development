@@ -22,8 +22,8 @@ public class AccountController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@RequestBody @Valid Account accountData) {
-        service.create(accountData);
+    public Account create(@RequestBody @Valid Account accountData) {
+        return service.create(accountData);
     }
 
     @GetMapping("/{id}")
