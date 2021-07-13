@@ -1,6 +1,7 @@
 package com.acme.dbo;
 
 import com.acme.dbo.config.Config;
+import com.acme.dbo.controller.ClientController;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

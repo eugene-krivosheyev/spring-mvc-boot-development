@@ -1,4 +1,6 @@
-package com.acme.dbo;
+package com.acme.dbo.controller;
+import com.acme.dbo.BankClient;
+import com.acme.dbo.ClientService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
