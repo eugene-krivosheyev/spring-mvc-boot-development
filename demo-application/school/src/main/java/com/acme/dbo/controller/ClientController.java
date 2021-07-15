@@ -27,7 +27,7 @@ public class ClientController {
     @GetMapping("/{id}")
     public BankClient findById(@PathVariable @PositiveOrZero String id) throws ClientNotFoundException {
         BankClient client = service.findById(Integer.valueOf(id));
-        if (client == null) throw new ClientNotFoundException(id);
+        if (client == null) throw new ClientNotFoundException(Integer.valueOf(id));
         return client;
     }
     @GetMapping
