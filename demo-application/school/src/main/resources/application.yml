@@ -1,0 +1,4 @@
+debug: false
+logging.level:
+  org.springframework: ERROR
+  com.acme.dbo: WARN
