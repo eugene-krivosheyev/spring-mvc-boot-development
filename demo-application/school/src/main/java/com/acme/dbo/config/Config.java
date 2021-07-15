@@ -7,7 +7,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
 @Configuration
-@ComponentScan ("com.acme.dbo")
 @EnableWebMvc
 public class Config {
 }

@@ -2,6 +2,9 @@ package com.acme.dbo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -11,14 +14,13 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringJUnitWebConfig(classes = com.acme.dbo.config.Config.class)
+@SpringBootTest
+@AutoConfigureMockMvc
 public class ClientIT {
+    @Autowired
     private MockMvc mockMvc;
 
-    @BeforeEach
-    void setUp(WebApplicationContext wac) {
-        mockMvc = MockMvcBuilders.webAppContextSetup(wac).build();
-    }
+
 
     @Test
     public void shouldGetEmptyArrayWhenNoClients() throws Exception {
