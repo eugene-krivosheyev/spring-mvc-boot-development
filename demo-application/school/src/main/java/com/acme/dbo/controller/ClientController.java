@@ -21,8 +21,8 @@ public class ClientController {
     }
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@RequestBody @Valid BankClient clientData){
-        service.create(clientData);
+    public BankClient create(@RequestBody @Valid BankClient clientData){
+        return service.create(clientData);
     }
     @GetMapping("/{id}")
     public BankClient findById(@PathVariable @PositiveOrZero String id) throws ClientNotFoundException {
