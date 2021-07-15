@@ -1,5 +1,8 @@
 package com.acme.dbo;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.PositiveOrZero;
 import java.util.Objects;
 
 public class BankClient {
@@ -14,9 +17,11 @@ public class BankClient {
         this.id = id;
         this.name = name;
     }
+    @PositiveOrZero
     public int getId() {
         return id;
     }
+    @NotNull
     public String getName(){
        return name;
     }

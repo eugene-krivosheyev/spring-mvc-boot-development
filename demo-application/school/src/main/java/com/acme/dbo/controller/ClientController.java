@@ -2,13 +2,17 @@ package com.acme.dbo.controller;
 import com.acme.dbo.BankClient;
 import com.acme.dbo.ClientService;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.constraints.PositiveOrZero;
 import java.util.Collection;
 
 
 @RestController
 @RequestMapping("/api/client")
+@Validated
 public class ClientController {
     private ClientService service;
 
@@ -17,11 +21,11 @@ public class ClientController {
     }
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@RequestBody BankClient clientData){
+    public void create(@RequestBody @Valid BankClient clientData){
         service.create(clientData);
     }
     @GetMapping("/{id}")
-    public BankClient findById(@PathVariable String id) throws ClientNotFoundException {
+    public BankClient findById(@PathVariable @PositiveOrZero String id) throws ClientNotFoundException {
         BankClient client = service.findById(Integer.valueOf(id));
         if (client == null) throw new ClientNotFoundException(id);
         return client;
