@@ -3,13 +3,16 @@ package com.acme.dbo.controller;
 import com.acme.dbo.domain.Account;
 import com.acme.dbo.service.AccountService;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigDecimal;
+import javax.validation.Valid;
+import javax.validation.constraints.Positive;
 import java.util.Collection;
 
 @RestController
 @RequestMapping("/api/account")
+@Validated
 public class AccountController {
     private final AccountService service;
 
@@ -19,19 +22,19 @@ public class AccountController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@RequestBody String amountData) {
-        service.create(new BigDecimal(amountData));
+    public Account create(@RequestBody @Valid Account accountData) {
+        return service.create(accountData);
     }
 
     @GetMapping("/{id}")
-    public Account findById(@PathVariable String id) throws AccountNotFoundException {
-        Account account = service.findById(new Integer(id));
+    public Account findById(@PathVariable @Positive Integer id) throws AccountNotFoundException {
+        Account account = service.findById(id);
         if (account == null) throw new AccountNotFoundException(id);
         return account;
     }
 
     @GetMapping
-    public @ResponseBody Collection<Account> findAll() {
+    public Collection<Account> findAll() {
         return service.findAll();
     }
 }

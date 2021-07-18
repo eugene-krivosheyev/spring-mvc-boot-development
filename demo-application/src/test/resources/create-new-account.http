@@ -1,6 +1,8 @@
-POST http://localhost:8080/spring-mvc-webapp/api/account
+POST http://localhost:8080/api/account
 Content-Type: application/json
 
-1.1
+{
+  "amount": 1.11
+}
 
 ###

@@ -1,0 +1,6 @@
+accounts.repo.init-capacity: 5
+
+debug: true
+logging.level:
+  org.springframework: DEBUG
+  com.acme.dbo: DEBUG

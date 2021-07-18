@@ -1,0 +1,6 @@
+accounts.repo.init-capacity: 10
+
+debug: false
+logging.level:
+  org.springframework: ERROR
+  com.acme.dbo: WARN

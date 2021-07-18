@@ -1,4 +1,4 @@
-GET http://localhost:8080/spring-mvc-webapp/api/account/0
+GET http://localhost:8080/api/account/1
 Accept: application/json
 
 ###
